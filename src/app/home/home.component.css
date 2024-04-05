@@ -1,0 +1,10 @@
+.background-image-container {
+    background-image: url('../../assets/img/hero-bg.jpg');
+    background-size: fill; /* Optional: Adjusts the size of the background image */
+    /* Additional background properties can be added as needed */
+  }
+  img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Ensure the image fills the container */
+    object-fit:fill ; /* Image will cover the entire container */
+  }
