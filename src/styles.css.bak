@@ -620,7 +620,8 @@ body {
   # Cta
   --------------------------------------------------------------*/
   .cta {
-      background-size: cover;
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") fixed center center;
+    background-size: cover;
     padding: 60px 0;
   }
   .cta h3 {
@@ -862,7 +863,8 @@ body {
     color: #626262;
   }
   .counts .image {
-     background-size: cover;
+    background: url("../img/counts-img.jpg") center center no-repeat;
+    background-size: cover;
     min-height: 400px;
   }
   @media (max-width: 991px) {
