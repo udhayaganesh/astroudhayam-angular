@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 #preloader:before {
   content: "";
   position: fixed;
-  top: calc(50% - 0px);
+  top: calc(10% - 0px);
   left: calc(50% - 30px);
   border: 6px solid #ffc451;
   border-top-color: #151515;
@@ -294,13 +294,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
+  top: 05px;
   right: 15px;
 }
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
+  top: 25px;
   right: 15px;
   bottom: 15px;
   left: 15px;
