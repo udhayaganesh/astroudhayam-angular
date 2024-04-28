@@ -1,0 +1,22 @@
+#sun {
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    background-color: gold; 	
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px -10px yellow;
+    }
+    to {
+      box-shadow: 0 0 10px 10px white;
+    }
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   
+  }

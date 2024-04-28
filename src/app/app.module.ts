@@ -16,6 +16,7 @@ import { BoardUserComponent } from './board-user/board-user.component';
 import { httpInterceptorProviders } from './_helpers/http.interceptor';
 import { MeditationComponent } from './meditation/meditation.component';
 import { YogaComponent } from './yoga/yoga.component';
+import { CountUpDirective } from './count-up.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { YogaComponent } from './yoga/yoga.component';
     BoardModeratorComponent,
     BoardUserComponent,
     MeditationComponent,
-    YogaComponent
+    YogaComponent,
+    CountUpDirective
   ],
   imports: [
     BrowserModule,
