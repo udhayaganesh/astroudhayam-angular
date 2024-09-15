@@ -1,159 +1,189 @@
 <div *ngIf="showFirstForm">
+
+
+
     <section id="hero" style="   height: 100% !important;" class="d-flex align-items-center justify-content-center">
         <div class="container" data-aos="fade-up">
-
             <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
                 <div class="col-xl-12 col-lg-12">
-                    <form #firstForm="ngForm" (ngSubmit)="onFirstFormSubmit()">
-                        <label style="color:white;">Manifest Reason:</label>
+
+                    <label style="color:white;">Manifest </label>
+                    <h4>“The soul loves to meditate, for in contact with the Spirit lies its greatest joy.”
+                        <br />
+                        — Paramhansa Yogananda
+                    </h4>
+                    <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+
+                        <div class="col-xl-2 col-md-3 d-none d-md-block ">
+                            <a href="/meditation" (click)="navToPage('FI',$event)">
+                                <div class="icon-box">
+                                    <i class="ri-money-dollar-circle-fill"></i>
+                                    <h3>Financial</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2 col-md-3 d-none d-md-block ">
+                            <a href="/meditation" (click)="navToPage('HE',$event)">
+                                <div class="icon-box">
+                                    <i class="ri-heart-2-fill"></i>
+                                    <h3>Health</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2 col-md-3 d-none d-md-block ">
+                            <a href="" (click)="navToPage('FA',$event)">
+                                <div class="icon-box">
+                                    <i class="ri-mental-health-fill"></i>
+                                    <h3>Fame</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                    <!--
                         <select id="country" name="country" [(ngModel)]="selectedCountry" required>
+
+
                             <option *ngFor="let country of manifest" [value]="country.code">{{ country.name }}</option>
+
                         </select>
                         <br>
-                        <button type="submit">Next</button>
-                    </form>
-
-
+                        <button type="submit">Next</button>-->
 
                 </div>
             </div>
         </div>
     </section>
-
 </div>
+
 <div *ngIf="!showFirstForm && showSecondForm && isFinancial">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="jquery.counterup.min.js"></script>
     <section id="hero" class="" style="background: url('assets/img/m3.jpg') top center !important; background-position: center;  background-repeat: no-repeat;  background-size: 100% auto;background-size: cover; width:100%;
-height:100%; ">
+  height:100%; ">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12  col-xs-12" style="padding-top:15%"></div>
-                <div class="col-lg-4  col-xs-4">
-
-
-
+                <div class="col-lg-12  col-xs-12">
+                    <div class="centered" style=" position: relative;
+                      top: 0%;left:40px;
+                       color:white;font-size:14px;">
+                        <b>
+                            <a href="#" (click)="enableAutoplay($event)">Add Music</a>
+                        </b>
+                    </div>
                 </div>
                 <div class="col-lg-6  col-xs-6">
                     <div id="sun">
-
-
-                        <div class="centered" style=" position: relative;
-top: 40%;
-left: 20%;color:white;font-size:14px;"><b><a href="#" (click)="enableAutoplay($event)">Start Music</a></b></div>
+                        <div class="centered"
+                            style=" position: relative;top: 37px;left: 46px;color:black;font-size:14px;">
+                            <b>
+                                <p #minutes></p>
+                                <p #seconds></p>
+                            </b>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="container" data-aos="fade-up">
-
-
-
-
                 <div class="row">
                     <div class="col-lg-5  col-xs-5"></div>
-
                     <div class="col-lg-7  col-xs-7" style="text-align:left;">
-
-
                         <div style="visibility:hidden">
-
                             <audio #myAudio controls>
                                 <source [src]="soundFilePath" type="audio/mpeg">
-
                             </audio>
                         </div>
-
-
                     </div>
                 </div>
             </div>
-
             <div class="row" style="overflow:auto">
                 <div class="col-xl-2 col-lg-2"></div>
                 <div class="col-xl-8 col-lg-8">
-
-
                     <div style="text-align:left;font-size:28px; color:white;padding:28px;" id="demo"></div>
-
                     <div class="col-xl-2 col-lg-2"></div>
-
                 </div>
             </div>
-
-
-
-
-
         </div>
     </section>
 </div>
-
-
 <div *ngIf="!showFirstForm && showSecondForm && isHealth">
-    <div class="row">
-
-
-        <div>
-            <div id="moon">
-
-                <div class="centered" style=" position: relative;top: 52px;left: 42px;color:black;font-size:14px;"><b>
-
-                        <!--<a href="#" (click)="enableNumber($event)">Start Music</a>-->
-
-                        <p #minutes></p>
-                        <p #seconds></p>
-
-
-                    </b></div>
+    <div class="centered" style=" position: relative;
+      
+      left: 46px;color:white;font-size:14px;">
+        <b>
+            <a href="#" (click)="enableAutoplay($event)">Add Music</a>
+        </b>
+    </div>
+    <div style="display: flex;">
+        <div id="moon">
+            <div class="centered" style=" position: relative;top: 37px;left: 46px;color:black;font-size:14px;">
+                <b>
+                    <p #minutes></p>
+                    <p #seconds></p>
+                </b>
             </div>
-            <!-- <div class="count-down-timer" style=" text-align: left;">
-                <p #minutes></p>
-                <p #seconds></p>
-            </div>-->
         </div>
-        <div>
-
-
-
-            <div class="bodyEarth">
-                <div class='planet-container'>
-
-
-
-                    <div class='night'></div>
-                    <div class='day'></div>
-                    <div class='clouds'></div>
-                    <div class='inner-shadow'></div>
+        <div class="bodyEarth">
+            <div class='planet-container'>
+                <div class='night'></div>
+                <div class='day'></div>
+                <div class='clouds'></div>
+                <div class='inner-shadow'></div>
+            </div>
+        </div>
+        <!-- <div class="count-down-timer" style=" text-align: left;"><p #minutes></p><p #seconds></p></div>-->
+        <div style="visibility:hidden">
+            <audio #myAudio controls>
+                <source [src]="soundFilePath1" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+    <div></div>
+</div>
+<div *ngIf="!showFirstForm && showSecondForm && isFame">
+    <div class="waterfall">
+        <div class="waterfall-loop"></div>
+        <div class="waterfall-mask"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12  col-xs-12">
+                    <div class="centered" style=" position: relative;
+      
+          left: 46px;color:white;font-size:14px;">
+                        <b>
+                            <a href="#" (click)="enableAutoplay($event)">Add Music</a>
+                        </b>
+                    </div>
+                    <br /> <br />
+                    <div class="centered" style=" position: relative;top: 37px;left: 46px;color:black;font-size:14px;">
+                        <b>
+                            <p #minutes></p>
+                            <p #seconds></p>
+                        </b>
+                    </div>
+                    <div style="visibility:hidden">
+                        <audio #myAudio controls>
+                            <source [src]="soundFilePath2" type="audio/mpeg">
+                        </audio>
+                    </div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
 </div>
-
-<div *ngIf="!showFirstForm && showSecondForm && others">
-    Under Construction
-
+<div *ngIf="!showFirstForm && showSecondForm && isBeach">
+    <div style="background: url('assets/img/ocean.jpg') top center !important; background-position: center;  background-repeat: no-repeat;  background-size: 100% auto;background-size: cover; width:100%;
+      height:100%; ">
+        <div class="ocean">
+            <div class="wave"></div>
+        </div>
+    </div>
 </div>
-
-
-
-
-
-<!--  
-
-
-<div *ngIf="!showFirstForm && showSecondForm">
-
-<form #secondForm="ngForm" (ngSubmit)="onSecondFormSubmit()">
-<label for="email">Email:</label>
-<input type="email" id="email" name="email" [(ngModel)]="email" required>
-<br>
-<label for="password">Password:</label>
-<input type="password" id="password" name="password" [(ngModel)]="password" required>
-<br>
-<button type="submit">Submit</button>
-</form>
-</div>-->
+<div *ngIf="!showFirstForm && showSecondForm && others"> Under Construction </div>

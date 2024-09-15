@@ -1,6 +1,17 @@
 <div id="app">
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M703V0JQV5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-M703V0JQV5');
+  </script>
+
+  <nav class="navbar navbar-expand navbar-dark bg-dark" style="padding:0px !important;">
     <a href="#" class="navbar-brand">AstroUdhayam</a>
+
     <ul class="navbar-nav mr-auto" routerLinkActive="active">
       <!--  <li class="nav-item">
         <a href="/home" class="nav-link" routerLink="home">Home </a>
@@ -15,7 +26,6 @@
         <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">User</a>
       </li>-->
     </ul>
-
     <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
       <li class="nav-item">
         <a href="/register" class="nav-link" routerLink="register">Sign Up</a>

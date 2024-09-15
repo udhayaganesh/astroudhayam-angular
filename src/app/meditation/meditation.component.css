@@ -1,116 +1,149 @@
 #sun {
-    width: 130px;
-    height: 130px;
-    border-radius: 100px;
-    background-color: gold; 	
-    animation: glow 2s infinite alternate;
-  }
-  
-  #moon {
-    width: 130px;
-    height: 130px;
-    border-radius: 100px;
-    background-color: silver; 	
-    animation: glow 2s infinite alternate;
-  }
-  
-  
-
-  @keyframes glow {
-    from {
-      box-shadow: 0 0 10px -10px yellow;
-    }
-    to {
-      box-shadow: 0 0 10px 10px white;
-    }
-  }
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-   
-  }
-
-
-  .bodyEarth {
-    align-items: center;
-     
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    margin: 0 0;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  background-color: gold;
+  animation: glow 2s infinite alternate;
 }
+
+#moon {
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  background-color: silver;
+  animation: glow 2s infinite alternate;
+  display: flex;
+  margin: 15px;
+}
+
+#moon1 {
+
+  display: flex;
+  margin: 15px;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px yellow;
+  }
+
+  to {
+    box-shadow: 0 0 10px 10px white;
+  }
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+}
+
+
+.bodyEarth {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
 .planet-container {
-    border-radius: 50%;
-    box-shadow: 5px -3px 10px 3px #5e90f1;
-    height: 500px;
-    overflow: hidden;
-    position: relative;
-    width: 500px;
-    z-index: 1;
+  border-radius: 50%;
+  box-shadow: 5px -3px 10px 3px #5e90f1;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+  z-index: 1;
 }
+
 .night {
-    animation: rotate-night 80s linear infinite;
-    background-image: url(https://www.solarsystemscope.com/textures/download/2k_earth_nightmap.jpg);
-    background-size: 200%;
-    height: 500px;
-    position: absolute;
-    width: 500px;
-    z-index: 2;
+  animation: rotate-night 80s linear infinite;
+  background-image: url(https://www.solarsystemscope.com/textures/download/2k_earth_nightmap.jpg);
+  background-size: 200%;
+  height: 500px;
+  position: absolute;
+  width: 500px;
+  z-index: 2;
 }
+
 .day {
-    animation: rotate-day 80s linear infinite;
-    background-image: url(https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg);
-    background-size: 200%;
-    border-left: solid 1px black;
-    border-radius: 50%;
-    box-shadow: 5px 0 20px 10px #040615 inset; 
-    height: 500px;
-    margin-left: 110px;
-    position: absolute;
-    width: 500px;
-    z-index: 3;
+  animation: rotate-day 80s linear infinite;
+  background-image: url(https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg);
+  background-size: 200%;
+  border-left: solid 1px black;
+  border-radius: 50%;
+  box-shadow: 5px 0 20px 10px #040615 inset;
+  height: 500px;
+  margin-left: 110px;
+  position: absolute;
+  width: 500px;
+  z-index: 3;
 }
+
 .clouds {
-    animation: rotate-day 50s linear infinite, spin-clouds 100s ease infinite;
-    background-image: url(https://www.solarsystemscope.com/textures/download/2k_earth_clouds.jpg);
-    background-size: 200%;
-    border-radius: 50%;    
-    box-shadow: 5px 0 20px 10px #040615 inset, -9px 0px 20px 10px #5e90f1 inset;
-    height: 500px;
-    margin-left: 100px;
-    opacity: 0.45;
-    position: absolute;
-    width: 500px;
-    z-index: 4;
+  animation: rotate-day 50s linear infinite, spin-clouds 100s ease infinite;
+  background-image: url(https://www.solarsystemscope.com/textures/download/2k_earth_clouds.jpg);
+  background-size: 200%;
+  border-radius: 50%;
+  box-shadow: 5px 0 20px 10px #040615 inset, -9px 0px 20px 10px #5e90f1 inset;
+  height: 500px;
+  margin-left: 100px;
+  opacity: 0.45;
+  position: absolute;
+  width: 500px;
+  z-index: 4;
 }
+
 .inner-shadow {
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -5px 0 10px 1px #152b57 inset, 5px 0 10px 1px #040615 inset;
-    height: 500px;
-    margin-left: 0;
-    position: absolute;
-    width: 500px;
-    z-index: 5;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -5px 0 10px 1px #152b57 inset, 5px 0 10px 1px #040615 inset;
+  height: 500px;
+  margin-left: 0;
+  position: absolute;
+  width: 500px;
+  z-index: 5;
 }
 
 @keyframes rotate-day {
-    0% { background-position: 120% 0; }
-    100% { background-position: -80% 0; }
+  0% {
+    background-position: 120% 0;
+  }
+
+  100% {
+    background-position: -80% 0;
+  }
 }
+
 @keyframes rotate-night {
-    0% { background-position: calc(120% + 120px) 0; }
-    100% { background-position: calc(-80% + 120px) 0; }
+  0% {
+    background-position: calc(120% + 120px) 0;
+  }
+
+  100% {
+    background-position: calc(-80% + 120px) 0;
+  }
 }
+
 @keyframes spin-clouds {
-    0% { transform: rotate(0deg); }
-    50% { transform: rotate(20deg); }
-    100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
+
 .count-down-timer {
   box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 20%);
   text-align: center;
@@ -122,11 +155,12 @@
   padding: 2px;
   font-family: sans-serif;
 
-  > p {
+  >p {
     margin: 1px 0 1px 0;
   }
 
   .wrapper {
+
     .description,
     .times {
       display: grid;
@@ -135,7 +169,7 @@
     }
 
     .description {
-      > p {
+      >p {
         margin: 0;
         font: normal 14px sans-serif;
       }
@@ -147,6 +181,7 @@
         position: relative;
         margin: 0;
         font: normal 40px courier, sans-serif;
+
         ::ng-deep img {
           position: absolute;
           top: 50%;
@@ -164,5 +199,112 @@
 @media screen and (max-width: 430px) {
   .count-down-timer {
     margin: 20px;
+  }
+}
+
+
+
+.waterfall {
+  position: relative;
+  width: 960px;
+  height: 501px;
+  background-image: url("https://raw.github.com/trongthanh/ttt-sources/master/demos/html-css/realistic-css3-waterfall/img/waterfall.jpg");
+}
+
+.waterfall>div {
+  position: absolute;
+}
+
+/* The waterfall loop
+Key ingredients:
+- Vertically seamless bitmap
+- Background repeat Y
+- Infinite animation which shifts background position vertically
+ */
+.waterfall-loop {
+  /* offset x of the mask */
+  left: 400px;
+  /* offset y of the mask */
+  top: 87px;
+  /* width of the mask */
+  width: 160px;
+  /* height of the mask */
+  height: 420px;
+  background: url("https://raw.github.com/trongthanh/ttt-sources/master/demos/html-css/realistic-css3-waterfall/img/waterfall-loop.png") 0 0 repeat-y;
+  animation: waterfallloop 5s infinite linear;
+
+}
+
+
+
+@keyframes waterfallloop {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 1112px;
+  }
+}
+
+/* The mask overlay to soften borders */
+.waterfall-mask {
+  width: 960px;
+  height: 401px;
+  background: url("https://raw.github.com/trongthanh/ttt-sources/master/demos/html-css/realistic-css3-waterfall/img/waterfall-mask.png") 367px 87px no-repeat;
+}
+
+.ocean {
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  height: 1%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -75px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+
+  0%,
+  100% {
+    transform: translate3d(0, -20px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
   }
 }
